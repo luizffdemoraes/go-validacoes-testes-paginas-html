@@ -2,6 +2,7 @@ package main
 
 import (
 	"api-go-gin/controllers"
+	"api-go-gin/database"
 	"io"
 	"net/http"
 	"net/http/httptest"
@@ -31,4 +32,14 @@ func TestVerificaStatusCodeDaSaudacaoComParametro(t *testing.T) {
 	mockDaResposta := `{"API diz":"E ai gui, tudo beleza?"}`
 	respostaBody, _ := io.ReadAll(resposta.Body)
 	assert.Equal(t, mockDaResposta, string(respostaBody))
+}
+
+func TestListaTodosOsAlunosHanlder(t *testing.T) {
+	database.ConectaComBancoDeDados()
+	r := SetupDasRotasDeTeste()
+	r.GET("/alunos", controllers.ExibeTodosAlunos)
+	req, _ := http.NewRequest("GET", "/alunos", nil)
+	resposta := httptest.NewRecorder()
+	r.ServeHTTP(resposta, req)
+	assert.Equal(t, http.StatusOK, resposta.Code)
 }
