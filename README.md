@@ -47,6 +47,14 @@ Testando os endpoints
 * Geramos um aluno mock para ser usado em nossos testes;
 * Realizamos o teste do enpoint que busca um aluno por CPF.
 
+<h2 align="center">
+Aprofundando em testes
+</h2>
+
+* Testamos a busca de alunos por ID;
+* Garantimos o comportamento do método DELETE através de um teste;
+* Criamos um teste que verifica a atualização dos dados de um aluno.
+
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
