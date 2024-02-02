@@ -14,6 +14,22 @@ Instalando e criando a primeira rota com Gin
 
 ```go get gopkg.in/validator.v2```
 
+<h2 align="center">
+Testes
+</h2>
+
+### 🧪 Testes utilizando Postman
+```json
+pm.test("Status code da requisição deve ser 200", function () {
+    pm.response.to.have.status(200);
+});
+pm.test("Verificando o conteúdo da Resposta", function () {
+    var jsonData = pm.response.json();
+    pm.response.to.have.body('{"API diz:":"E ai Luiz, tudo beleza?"}');
+});
+```
+
+
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
