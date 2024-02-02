@@ -29,6 +29,10 @@ pm.test("Verificando o conteúdo da Resposta", function () {
 });
 ```
 
+Instalando lib validação do stretchr testify
+
+```go get github.com/stretchr/testify```
+
 
 ### 🛠 Tecnologias
 
@@ -38,3 +42,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Gin 1.9.1](https://github.com/gin-gonic/gin)
 - [Gorm](https://gorm.io/index.html)
 - [Validator](https://pkg.go.dev/gopkg.in/validator.v2)
+- [Testify](https://github.com/stretchr/testify)
