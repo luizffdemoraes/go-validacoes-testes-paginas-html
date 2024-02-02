@@ -18,6 +18,12 @@ Instalando e criando a primeira rota com Gin
 Testes
 </h2>
 
+* Realizamos um teste no Postman que verifica o statusCode de uma resposta;
+* Criamos nosso primeiro teste em Go, o TestFalhador;
+* Escrevemos um teste que verifica o endpoint de Saudação da API;
+* Instalando o assert e alteramos o código verificando o corpo da resposta.
+
+
 ### 🧪 Testes utilizando Postman
 ```json
 pm.test("Status code da requisição deve ser 200", function () {
@@ -33,6 +39,13 @@ Instalando lib validação do stretchr testify
 
 ```go get github.com/stretchr/testify```
 
+<h2 align="center">
+Testando os endpoints
+</h2>
+
+* Criamos um teste que garanta o comportamento da listagem de alunos;
+* Geramos um aluno mock para ser usado em nossos testes;
+* Realizamos o teste do enpoint que busca um aluno por CPF.
 
 ### 🛠 Tecnologias
 
