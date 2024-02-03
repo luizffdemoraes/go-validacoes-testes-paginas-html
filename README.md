@@ -55,6 +55,13 @@ Aprofundando em testes
 * Garantimos o comportamento do método DELETE através de um teste;
 * Criamos um teste que verifica a atualização dos dados de um aluno.
 
+<h2 align="center">
+Deletando, editando e buscando alunos
+</h2>
+
+* Aprendemos como renderizar páginas HTML com Gin;
+* Registramos no Gin um caminho para os arquivos estáticos, para deixar nossa aplicação bem bonita.
+
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
